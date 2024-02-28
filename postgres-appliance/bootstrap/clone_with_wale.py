@@ -61,7 +61,7 @@ def fix_output(output):
             if started:
                 line = line.replace(' modified ', ' last_modified ')
         if started:
-            yield '\t'.join(line.split())
+            yield '\t'.join(line.split('\t'))
 
 
 def choose_backup(backup_list, recovery_target_time):

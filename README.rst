@@ -29,7 +29,6 @@ To fix this a copy of the ``clone_with_wale.py`` script is used with this patch
   -            yield '\t'.join(line.split())
   +            yield '\t'.join(line.split('\t'))
   
-  
    def choose_backup(backup_list, recovery_target_time):
 
 =========================================
